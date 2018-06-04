@@ -11,6 +11,7 @@ var data_output = 'output_data/';
 var root = path.dirname(require.main.filename);
 var data_input_dir_path = root + '/' + data_input;
 var data_output_dir_path = root + '/' + data_output;
+ensureDirectory(data_output_dir_path);
 //http://webinei.inei.gob.pe:8080/sisconcode/publico.htm#
 function readJSON(p) {
     var contents = fs.readFileSync(p);
